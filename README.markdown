@@ -1,8 +1,6 @@
-# grunt-styleguide-tryout2
+StyleDoccoでプレビューのHTMLの部分でJadeを使ってみるためにごにょごにょした。
 
-scss, bourbon, styledoccoを使ったサンプル。
+styleguide.styledocco.options.templateでプレビュー用のiframeの中に任意のCSSやJSを追加出来るので、 jadeをパースするようにしてみた。
 
-scssを監視して変更があったら、scssを元にstyleguideを作成する。
-何故か２回目以降変更が反映されないので、一度docs以下を空にしている。
-
-bourbonはscssの外に置いた
+- Mac Chrome v30.0.1599.66 では動いた。
+- Mac Safari v6.0.5では動かなかった。

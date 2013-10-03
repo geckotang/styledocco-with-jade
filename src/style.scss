@@ -1,130 +1,48 @@
+// # .mod-btn
+// 
+//```
+//a.mod-btn ボタン
+//a.mod-btn(class=':hover') ボタン
+//```
+.mod-btn {
+	display: inline-block;
+	margin: 2px;
+	padding: 10px;
+	border-radius: 3px;
+	background: tomato;
+	&:hover {
+		background: lime;
+	}
+}
+
+
 // # .mod-entrySeriesList
 // 
 //```
 //.mod-entrySeriesList
-//	.mod-entrySeriesList-head
-//		.mod-entrySeriesList-headInner
-//			span.mod-entrySeriesList-colSeries series
-//			span.mod-entrySeriesList-colRead
-//			span.mod-entrySeriesList-colTitle title
-//			span.mod-entrySeriesList-colAuthors
-//				i.icon-user
-//			span.mod-entrySeriesList-colLevel level
-//			span.mod-entrySeriesList-colDate date
 //	.mod-entrySeriesList-body
-//		.mod-entrySeriesGroup
-//		.mod-entrySeriesGroup
-//		.mod-entrySeriesGroup
+//		.mod-entrySeriesGroup My 
+//		.mod-entrySeriesGroup is
+//		.mod-entrySeriesGroup Geckotang
 //```
-
-.mod-entryDateList .mod-entryDateList-headInner,
-.mod-entrySeriesList .mod-entrySeriesList-headInner {
-  width: 932px;
-  margin: 0 auto;
-  position: relative;
-  opacity: 0.4;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
-}
-
-.mod-entryDateList .mod-entryDateList-headInner span,
-.mod-entrySeriesList .mod-entrySeriesList-headInner span {
-  display: inline-block;
-}
-
 .mod-entrySeriesList {
-  padding: 0 14px 20px;
-  margin: 0 auto;
-  font-size: 12px;
-  color: #fff;
+	width: 100%;
 }
-.mod-entrySeriesList a {
-  color: #fff;
+.mod-entrySeriesList-body {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
 }
-.mod-entrySeriesList .mod-entrySeriesList-head {
-  padding: 20px 0 15px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colSeries {
-  width: 205px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colRead {
-  width: 52px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colTitle {
-  width: 270px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colAuthors {
-  width: 185px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colLevel {
-  width: 65px;
-}
-.mod-entrySeriesList .mod-entrySeriesList-colDate {
-  width: 155px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-head {
-  position: relative;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 8px 0;
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.06));
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-  box-shadow: rgba(0,0,0,0.12) 0px 1px 0px;
-  cursor: pointer;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-head:hover {
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05), rgba(0,0,0,0.11));
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-headInner:before {
-  position: absolute;
-  top: 3px;
-  left: -27px;
-  font-size: 18px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-headInner .mod-readIcon--unread {
-  vertical-align: middle;
-  margin-left: 20px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-head--open .mod-entrySeriesGroup-headInner:before {
-  font-family: "FontAwesome";
-  display: inline-block;
-  content: '\F13A';
-  color: rgba(255,255,255,0.2);
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-head--close .mod-entrySeriesGroup-headInner:before {
-  font-family: "FontAwesome";
-  display: inline-block;
-  content: '\F138';
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colSeries {
-  width: 205px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colRead {
-  width: 52px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colTitle {
-  width: 270px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colAuthors {
-  width: 185px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colLevel {
-  width: 65px;
-}
-.mod-entrySeriesGroup .mod-entrySeriesGroup-colDate {
-  width: 155px;
-}
-
-.mod-entryDateGroup,
 .mod-entrySeriesGroup {
-  position: relative;
-  font-size: 12px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 3px 3px 1px rgba(0,0,0,0.3);
-  color: #fff;
+	display: table-cell;
+	&:nth-child(1) {
+		background: tomato;
+	}
+	&:nth-child(2) {
+		background: lime;
+	}
+	&:nth-child(3) {
+		background: olive;
+	}
 }
-
-
 
